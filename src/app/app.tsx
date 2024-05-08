@@ -62,8 +62,8 @@ const TableWithProviders = () => {
         header: 'Роль',
         enableSorting: false,
         enableColumnFilter: true,
-        filterVariant: 'autocomplete' || 'select', // фильтрация по ролям, опции: неполное совпадние текста или выпадающий список
-        filterSelectOptions: roles,
+        filterVariant: 'autocomplete' || 'select', // фильтрация
+        filterSelectOptions: roles, // опции фильтрации
         editVariant: 'select',
         editSelectOptions: roles,
         muiEditTextFieldProps: {

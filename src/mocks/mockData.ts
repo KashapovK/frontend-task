@@ -19,24 +19,9 @@ export const fakeData = [...Array(200)].map(() => ({
 }));
 
 export const roles = [
-  'Boss',
   'Postman',
-  'Editor',
-  'Seller',
+  'Consultant',
+  'Technician',
   'Engineer',
-  'Intern',
+  'Manager',
 ];
-
-export type UserApiResponse = {
-  data: Array<User>;
-  meta: {
-    totalRowCount: number;
-  };
-};
-
-export type FullUserInfoApiResponse = FullUserInfo;
-
-type FullUserInfo = User & {
-  jobTitle: string;
-  email: string;
-};
